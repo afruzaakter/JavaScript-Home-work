@@ -71,11 +71,11 @@
 //     }
 // }
 // Problem-3: 1 theke 100 ar modde jor odd/bijor number ber koro
-for (var i = 0; i <= 100; i++ ){
-    if(i % 2 == 1){
-        console.log(i);
-    }
-}
+// for (var i = 0; i <= 100; i++ ){
+//     if(i % 2 == 1){
+//         console.log(i);
+//     }
+// }
 
 
 
@@ -96,3 +96,22 @@ for (var i = 0; i <= 100; i++ ){
 //     console.log(multiplicationTable);
 // }
 
+// Problem-5: 3 ta number jog korar function likho ?
+
+// function sumOfNumber(number1, number2, number3){
+//      var result = number1 + number2 + number3 ;
+//      return result;
+// }
+
+// var result = sumOfNumber(4, 4, 4);
+// console.log(result);
+//    or 
+// console.log(sumOfNumber(4, 4, 4));
+
+// Problem-5: Write a simple function that takes name as a parameter and then return a customer message ?
+
+function msgGenerator(name){
+    var message = 'Hello ' + name + ', Welcome to Programming Hero';
+    return message;
+}
+console.log(msgGenerator("Medul Hasan"));
