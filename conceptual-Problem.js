@@ -110,8 +110,9 @@
 
 // Problem-5: Write a simple function that takes name as a parameter and then return a customer message ?
 
-function msgGenerator(name){
-    var message = 'Hello ' + name + ', Welcome to Programming Hero';
-    return message;
-}
-console.log(msgGenerator("Medul Hasan"));
+// function msgGenerator(name){
+//     var message = 'Hello ' + name + ', Welcome to Programming Hero';
+//     return message;
+// }
+// console.log(msgGenerator("Medul Hasan"));
+
