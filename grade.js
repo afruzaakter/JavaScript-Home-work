@@ -20,10 +20,7 @@ for(var i = 0; i<marks.length; i++){
     }
     else if(marks[i]>=90){
         console.log("A+");
-    }
-    
-
-    
+    }  
 }
 
 // if(marks >= 90){

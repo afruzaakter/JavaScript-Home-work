@@ -8,7 +8,7 @@
 // }
 // console.log(sum);
 
-// Sum of all numbers in an Array./ array sob man jog kora  function use kore
+// Sum of all numbers in an Array./ array sob number jog kora  function use kore
 // process-2; problem
 const numbers = [41, 50, 50];
 function arrayTotal(numbers){

@@ -1,6 +1,6 @@
 
 
-var signal =['green', 'yellow', 'red', 'green'];
+var signal =['green', 'yellow', 'red'];
 var red = true;
 for(var i=0; i<signal.length; i++){
     if(signal[i] == 'red'){
@@ -15,15 +15,7 @@ for(var i=0; i<signal.length; i++){
 }
 
 
-// green = false;
-// yellow = false;
-// red = ture;
-// if(green == true){
-//     console.log(' you can go');
-// else if( yellow == true){
-//     console.log('Hold on');
-// }
-// else if(red == true){
-//     conole.log('Stop');
-//     }
-// }
+
+// ৪. একটা ফাংশন লিখবা যেটাকে তুমি কোন সংখ্যাকে ইনপুট হিসেবে দিলে সে সেই সংখ্যার square করে সেই square কে রিটার্ন করবে।
+// অর্থাৎ তুমি ইনপুট হিসেবে 5 দিলে সেটাতে স্কয়ারে হিসেবে 25 আউটপুট হিসেবে পাবে। 
+
