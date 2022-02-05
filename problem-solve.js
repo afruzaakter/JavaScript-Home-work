@@ -21,15 +21,17 @@
 //      console.log(multiplicationTable);
 //  }
 
- let numbers =13;
- function multiplicationTable(multiplication){
-    for(let i = 1; i<=10; i++){
-        let result = i * numbers;  
-    } 
-    return result; 
- }
- let multiOutputTable = multiplicationTable(numbers + " * " + i + " = " + result);
- console.log(multiOutputTable);
+//  let numbers =13;
+//  function multiplicationTable(multiplication){
+//     const result = multiplication[1];
+//     for(const multiOutput of multiplication){
+//         let result = i * multiplication;  
+//     } 
+//     return result; 
+//  }
+//  let multiOutputTable = multiplicationTable(numbers + " * " + i + " = " + result);
+// let multiOutput = multiplicationTable(2)
+//  console.log(multiOutput);
 
 
 //  string type variable 
@@ -141,14 +143,27 @@
 // number.pop();
 // console.log(number);
 // ৯. তুমি কি একটা ফর লুপ দিয়ে কোন একটা array এর সবগুলা উপাদানকে দেখাতে পারবে। সেটা রেগুলার for লুপ হোক বা for of হোক। হলে সেই স্টাইলে একটা কোড লিখে ফেলো। 
+// process-1
 // var numbers = [40, 50, 60, 70 ,80 ];
-// for(var i = 0; i<numbers.length; i++){
-//     console.log(numbers);
-// }
+// // for(var i = 0; i<numbers.length; i++){
+// //     console.log(numbers);
+// // }
+// process-2
+// var numbers = [40, 50, 60, 70 ,80 ];
 // for(var number of numbers){
 //     console.log(number);
 // }
-
+// process-3
+// let numbers = [44,500,25,256,22];
+// function arrayNumber(numbers){
+//     var element = [0]
+//     for(var i = 0; i<numbers.length; i++){  
+//         var element = numbers;
+//     }
+//     return element;
+// }
+// const totalArray = arrayNumber(numbers);
+// console.log(totalArray);
 // ১০. তোমাকে যদি বলা হয়। একটা array এর মধ্যে ৮০ এর চাইতে বড় সংখ্যা থাকলে সেগুলাকে console log করে দেখাতে সেটা কি তুমি পারবে? তাহলে তুমি সেই কোড করে ফেলো 
 // var numbers = [40,50,85,80,55,59,90, 100, 96];
 // for(var number of numbers){
@@ -158,20 +173,20 @@
 // }
 
 // Function use problem solve :
-var numbers = [40,50,85,80,55,59,90, 100, 96];
-function largestNumber(numbers){
-    let arrayNumber = [];
-    for(const number of numbers){
+// var numbers = [40,50,85,80,55,59,90, 100, 96];
+// function largestNumber(numbers){
+//     let arrayNumber = [];
+//     for(const number of numbers){
      
-        if(number> 80 ){  
-           arrayNumber.push(number);
+//         if(number> 80 ){  
+//            arrayNumber.push(number);
             
-        }
-    }
-    return arrayNumber;
-}
-const result = largestNumber(numbers);
-console.log(result);
+//         }
+//     }
+//     return arrayNumber;
+// }
+// const result = largestNumber(numbers);
+// console.log(result);
 
  
 // ১২. একটা অবজেক্ট ডিক্লেয়ার করবে। সেটাতে তিনটা প্রপার্টি থাকবে। এবং কোন একটা প্রোপার্টি এর মান চেইঞ্জ করবা। 
@@ -206,3 +221,70 @@ console.log(result);
 // const result = bestFriend(names);
 // console.log(result)
 
+// ১. সিম্পল একটা ফাংশন লিখতে হবে। যেটার নাম হবে feetToInch এবং এই ফাংশন ইনপুট হিসেবে নিবে feet আর রিটার্ন করবে inch । অর্থাৎ এই ফাংশনকে কোন একটা ফিট বলে দিলে সে রিটার্ন হিসেবে বলে দিবে কত ইঞ্চি হয়। 
+
+// function feetToInch(feet){
+//     const inch = feet * 0.0833333;
+//     return inch;
+// }
+// const myFeet = feetToInch(5);
+// console.log("My feet in inch",myFeet);
+
+// ২. একদম ফাংশন এর নাম হুবহু centimeterToMeter নাম দিয়ে একটা ফাংশন লিখবে। এই ফাংশনে ইনপুট হিসাবে কেউ সেন্টিমিটার দিবে আর সেই সেন্টিমিটার কে মিটার এ কনভার্ট করে রেজাল্ট রিটার্ন করবে। 
+// function centimeterToMeter(centimeter){
+//     const meter = centimeter/100;
+//     return meter;
+// }
+// const result = centimeterToMeter(100);
+// console.log(result);
+
+// ৩. আরেকটা ফাংশন লিখবে যেটার নাম লিখবে। যেই ফাংশনের নাম হবে paperRequirements এই ফাংশনের প্যারামিটার হিসেবে তিনটা প্যারামিটার হবে। প্রথম প্যারামিটার হবে তুমি প্রথম বই কত কপি ছাপাতে চাও। সেকেন্ড প্যারামিটার হবে তুমি সেকেন্ড বই কত কপি ছাপাতে চাও। আর থার্ড প্যারামিটার হবে তুমি থার্ড বই কত কপি ছাপাতে চাও। অর্থাৎ কোন বই এর কত কপি ছাপানো হবে সেটাই প্যারামিটার হিসেবে নিবে। 
+// এইবার ভালো করে খেয়াল করো। 
+// প্রথম বই ছাপানোর জন্য পৃষ্ঠা লাগবে ১০০ টা 
+// সেকেন্ড বই ছাপানোর জন্য পৃষ্ঠা লাগবে ২০০ টা 
+// তৃতীয় বই ছাপানোর জন্য পৃষ্ঠা লাগবে ৩০০ টা 
+ 
+// এখন তোমার কাজ হচ্ছে paperRequirements নামক ফাংশন লিখে ফেলা যাতে। সেই ফাংশনকে কল করে কোন বই এর কত কপি লাগবে বলে দিবে প্যারামিটার হিসেবে। আর ফাংশন হিসাব করে বলে দিবে তোমার সর্বমোট কতপৃষ্ঠা কাগজ লাগবে। 
+// উত্তর হিসেবে সংখ্যা রিটার্ন করবে। 
+// process-1:
+// function paperRequirements(x,y,z){
+// var first = x * 100;
+// var second = y * 200;
+// var third = z * 300;
+// var totalBookPage= first + second + third;
+// return totalBookPage;
+// }
+//   const totalBookPage = paperRequirements(1,1,1);
+//   console.log(totalBookPage);
+
+// process 2:
+// function paperRequirements(x,y,z){
+//     const totalPaperCopy= (x*100) + (y*200) + (z*300);
+//     return totalPaperCopy;
+//     }
+//       const totalCopy = paperRequirements(1,1,1);
+//       console.log(totalCopy);
+    //   const totalPaperCopy = paperRequirements(1,1,1);
+    //   console.log(totalPaperCopy);
+    // ৩. এমন একটা ফ্যাংশনা লিখো যেটাকে তুমি ঘন্টাকে ইনপুট প্যারামিটার হিসেবে দিবে। আর সে সেই ঘন্টাকে মিনিটে কনভার্ট করে মিনিট রিটার্ন করবে।
+
+    // function hourConvertMinute(hour){
+    //     const minute = hour * 60;
+    //     return minute;
+    // }
+    // const myresult = hourConvertMinute(1);
+    // console.log(myresult,"minute");
+
+     
+// ৫. একটা array এর মধ্যে অনেকগুলা সংখ্যা থাকবে। তোমার কাজ হচ্ছে সংখ্যা গুলা একটার পর একটা করে চেক করা। এবং সংখ্যা গুলা যদি পজিটিভ সংখ্যা হয়। অর্থাৎ শূন্য বা শূন্যের চাইতে বড় হয় তাহলে সেগুলাকে কোন একটা array এর মধ্যে রাখবে। আর যদি নেগেটিভ সংখ্যা হয়। তাহলে লুপটা স্টপ করে দিবে। এবং লুপ বন্ধ করার আগ পর্যন্ত যতগুলা পজিটিভ সংখ্যা পাওয়া গেছে। সেগুলা রিটার্ন করে দিবে। 
+
+// let numbers = [45, 44, 45, 85, 42, -25, -10];
+// function positiveToNagitive(numbers){
+//     const element = numbers[0]; 
+// for(const number of numbers){
+//    let element = number;
+//    console.log(element);
+// }
+// }
+// const result = positiveToNagitive(numbers);
+// console.log(result);
